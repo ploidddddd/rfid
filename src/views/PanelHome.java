@@ -5,7 +5,10 @@
  */
 package views;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 /**
@@ -20,6 +23,30 @@ public class PanelHome extends javax.swing.JPanel {
     public PanelHome() {
         initComponents();
         panelLoginForm.setVisible(false);
+    }
+
+    public JButton getBtnLogin() {
+        return btnLogin;
+    }
+
+    public void setBtnLogin(JButton btnLogin) {
+        this.btnLogin = btnLogin;
+    }
+
+    public JPasswordField getTxtFldPassword() {
+        return txtFldPassword;
+    }
+
+    public void setTxtFldPassword(JPasswordField txtFldPassword) {
+        this.txtFldPassword = txtFldPassword;
+    }
+
+    public JTextField getTxtFldUsername() {
+        return txtFldUsername;
+    }
+
+    public void setTxtFldUsername(JTextField txtFldUsername) {
+        this.txtFldUsername = txtFldUsername;
     }
 
     /**

@@ -6,6 +6,7 @@
 package views;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 
 /**
@@ -28,6 +29,14 @@ public class PanelLanding extends javax.swing.JPanel {
         panelContent.revalidate();
     }
 
+    public JLabel getLblUsername() {
+        return lblUsername;
+    }
+
+    public void setLblUsername(JLabel lblUsername) {
+        this.lblUsername = lblUsername;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -45,7 +54,7 @@ public class PanelLanding extends javax.swing.JPanel {
         btnCanteenPOS = new javax.swing.JButton();
         btnCanteenInventory = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        lblUsername = new javax.swing.JLabel();
         btnLogout = new javax.swing.JButton();
         btnProfile = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
@@ -123,11 +132,11 @@ public class PanelLanding extends javax.swing.JPanel {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setLayout(null);
 
-        jLabel4.setFont(new java.awt.Font("Oswald Regular", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 84, 38));
-        jLabel4.setText("User User");
-        jPanel4.add(jLabel4);
-        jLabel4.setBounds(910, 0, 80, 60);
+        lblUsername.setFont(new java.awt.Font("Oswald Regular", 0, 18)); // NOI18N
+        lblUsername.setForeground(new java.awt.Color(255, 84, 38));
+        lblUsername.setText("User User");
+        jPanel4.add(lblUsername);
+        lblUsername.setBounds(910, 0, 80, 60);
 
         btnLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/btnLogout.png"))); // NOI18N
         btnLogout.setContentAreaFilled(false);
@@ -303,9 +312,9 @@ public class PanelLanding extends javax.swing.JPanel {
     private javax.swing.JButton btnLogout;
     private javax.swing.JButton btnProfile;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel lblHeader;
+    private javax.swing.JLabel lblUsername;
     private javax.swing.JPanel panelContent;
     private javax.swing.JPanel panelHeader;
     private javax.swing.JPanel panelSidebar;

@@ -5,6 +5,12 @@
  */
 package views;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author Chen
@@ -18,6 +24,63 @@ public class PanelCanteenInventory extends javax.swing.JPanel {
         initComponents();
     }
 
+    public JTable getTblProduct() {
+        return tblProduct;
+    }
+
+    public void setTblProduct(JTable tblProduct) {
+        this.tblProduct = tblProduct;
+    }
+
+    public JButton getBtnSave() {
+        return btnSave;
+    }
+
+    public void setBtnSave(JButton btnSave) {
+        this.btnSave = btnSave;
+    }
+
+    public JLabel getLblProductHeader() {
+        return lblProductHeader;
+    }
+
+    public void setLblProductHeader(JLabel lblProductHeader) {
+        this.lblProductHeader = lblProductHeader;
+    }
+
+    public JPanel getPanelAddProduct() {
+        return panelAddProduct;
+    }
+
+    public void setPanelAddProduct(JPanel panelAddProduct) {
+        this.panelAddProduct = panelAddProduct;
+    }
+
+    public JTextField getTxtFldProdName() {
+        return txtFldProdName;
+    }
+
+    public void setTxtFldProdName(JTextField txtFldProdName) {
+        this.txtFldProdName = txtFldProdName;
+    }
+
+    public JTextField getTxtFldProdPrice() {
+        return txtFldProdPrice;
+    }
+
+    public void setTxtFldProdPrice(JTextField txtFldProdPrice) {
+        this.txtFldProdPrice = txtFldProdPrice;
+    }
+
+    public JTextField getTxtFldProdQuantity() {
+        return txtFldProdQuantity;
+    }
+
+    public void setTxtFldProdQuantity(JTextField txtFldProdQuantity) {
+        this.txtFldProdQuantity = txtFldProdQuantity;
+    }
+
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -29,7 +92,7 @@ public class PanelCanteenInventory extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblProduct = new javax.swing.JTable();
         panelAddProduct = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lblProductHeader = new javax.swing.JLabel();
@@ -50,10 +113,10 @@ public class PanelCanteenInventory extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
-        jTable1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(53, 62, 71)));
-        jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTable1.setForeground(new java.awt.Color(0, 0, 51));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblProduct.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(53, 62, 71)));
+        tblProduct.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tblProduct.setForeground(new java.awt.Color(0, 0, 51));
+        tblProduct.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -64,17 +127,17 @@ public class PanelCanteenInventory extends javax.swing.JPanel {
                 "Product ID", "Product Name", "Product Quantity", "Product Price"
             }
         ));
-        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+        tblProduct.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jTable1MousePressed(evt);
+                tblProductMousePressed(evt);
             }
         });
-        jTable1.addKeyListener(new java.awt.event.KeyAdapter() {
+        tblProduct.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTable1KeyPressed(evt);
+                tblProductKeyPressed(evt);
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tblProduct);
 
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(40, 10, 540, 510);
@@ -168,17 +231,17 @@ public class PanelCanteenInventory extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtFldProdNameActionPerformed
 
-    private void jTable1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTable1KeyPressed
+    private void tblProductKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tblProductKeyPressed
         // TODO add your handling code here:
         
         
-    }//GEN-LAST:event_jTable1KeyPressed
+    }//GEN-LAST:event_tblProductKeyPressed
 
-    private void jTable1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MousePressed
+    private void tblProductMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblProductMousePressed
         // TODO add your handling code here:
        lblProductHeader.setText("Update Product");
 
-    }//GEN-LAST:event_jTable1MousePressed
+    }//GEN-LAST:event_tblProductMousePressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -192,9 +255,9 @@ public class PanelCanteenInventory extends javax.swing.JPanel {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblProductHeader;
     private javax.swing.JPanel panelAddProduct;
+    private javax.swing.JTable tblProduct;
     private javax.swing.JTextField txtFldProdName;
     private javax.swing.JTextField txtFldProdPrice;
     private javax.swing.JTextField txtFldProdQuantity;

@@ -5,6 +5,8 @@
  */
 package views;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author Chen
@@ -18,6 +20,38 @@ public class PanelAnnouncement extends javax.swing.JPanel {
         initComponents();
     }
 
+    public JLabel getLblAnnoucementContent() {
+        return lblAnnoucementContent;
+    }
+
+    public void setLblAnnoucementContent(JLabel lblAnnoucementContent) {
+        this.lblAnnoucementContent = lblAnnoucementContent;
+    }
+
+    public JLabel getLblAnnouncementDate() {
+        return lblAnnouncementDate;
+    }
+
+    public void setLblAnnouncementDate(JLabel lblAnnouncementDate) {
+        this.lblAnnouncementDate = lblAnnouncementDate;
+    }
+
+    public JLabel getLblUserFullName() {
+        return lblUserFullName;
+    }
+
+    public void setLblUserFullName(JLabel lblUserFullName) {
+        this.lblUserFullName = lblUserFullName;
+    }
+
+    public JLabel getLblUserPic() {
+        return lblUserPic;
+    }
+
+    public void setLblUserPic(JLabel lblUserPic) {
+        this.lblUserPic = lblUserPic;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,11 +62,11 @@ public class PanelAnnouncement extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel7 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
+        lblAnnouncementDate = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
+        lblAnnoucementContent = new javax.swing.JLabel();
+        lblUserPic = new javax.swing.JLabel();
+        lblUserFullName = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -46,29 +80,29 @@ public class PanelAnnouncement extends javax.swing.JPanel {
         jPanel7.setBackground(new java.awt.Color(220, 220, 220));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel10.setFont(new java.awt.Font("Oswald Regular", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 84, 38));
-        jLabel10.setText("May 9, 2018");
-        jPanel7.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 150, 90, 40));
+        lblAnnouncementDate.setFont(new java.awt.Font("Oswald Regular", 0, 14)); // NOI18N
+        lblAnnouncementDate.setForeground(new java.awt.Color(255, 84, 38));
+        lblAnnouncementDate.setText("May 9, 2018");
+        jPanel7.add(lblAnnouncementDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 150, 90, 40));
 
         jPanel10.setBackground(new java.awt.Color(207, 207, 207));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setBackground(new java.awt.Color(38, 48, 58));
-        jLabel12.setFont(new java.awt.Font("Oswald Regular", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(38, 48, 58));
-        jLabel12.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis pulvinar porta. Integer ultrices ante quam, ac porttitor ipsum aliquam sit amet. Nam sit amet urna pretium, mattis quam sed, commodo ante.");
-        jPanel10.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 900, 40));
+        lblAnnoucementContent.setBackground(new java.awt.Color(38, 48, 58));
+        lblAnnoucementContent.setFont(new java.awt.Font("Oswald Regular", 0, 14)); // NOI18N
+        lblAnnoucementContent.setForeground(new java.awt.Color(38, 48, 58));
+        lblAnnoucementContent.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis pulvinar porta. Integer ultrices ante quam, ac porttitor ipsum aliquam sit amet. Nam sit amet urna pretium, mattis quam sed, commodo ante.");
+        jPanel10.add(lblAnnoucementContent, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 900, 40));
 
         jPanel7.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1010, 60));
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img-user1.png"))); // NOI18N
-        jPanel7.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 80, 70));
+        lblUserPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img-user1.png"))); // NOI18N
+        jPanel7.add(lblUserPic, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 80, 70));
 
-        jLabel22.setFont(new java.awt.Font("Oswald Regular", 0, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(38, 48, 58));
-        jLabel22.setText("Jane Doe");
-        jPanel7.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 80, 70));
+        lblUserFullName.setFont(new java.awt.Font("Oswald Regular", 0, 18)); // NOI18N
+        lblUserFullName.setForeground(new java.awt.Color(38, 48, 58));
+        lblUserFullName.setText("Jane Doe");
+        jPanel7.add(lblUserFullName, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 80, 70));
 
         add(jPanel7);
         jPanel7.setBounds(60, 40, 1010, 200);
@@ -105,11 +139,7 @@ public class PanelAnnouncement extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -117,5 +147,9 @@ public class PanelAnnouncement extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JLabel lblAnnoucementContent;
+    private javax.swing.JLabel lblAnnouncementDate;
+    private javax.swing.JLabel lblUserFullName;
+    private javax.swing.JLabel lblUserPic;
     // End of variables declaration//GEN-END:variables
 }

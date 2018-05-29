@@ -5,6 +5,8 @@
  */
 package views;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author Chen
@@ -16,6 +18,46 @@ public class PanelProfile extends javax.swing.JPanel {
      */
     public PanelProfile() {
         initComponents();
+    }
+
+    public JLabel getLblAddress() {
+        return lblAddress;
+    }
+
+    public void setLblAddress(JLabel lblAddress) {
+        this.lblAddress = lblAddress;
+    }
+
+    public JLabel getLblBirthdate() {
+        return lblBirthdate;
+    }
+
+    public void setLblBirthdate(JLabel lblBirthdate) {
+        this.lblBirthdate = lblBirthdate;
+    }
+
+    public JLabel getLblGender() {
+        return lblGender;
+    }
+
+    public void setLblGender(JLabel lblGender) {
+        this.lblGender = lblGender;
+    }
+
+    public JLabel getLblName() {
+        return lblName;
+    }
+
+    public void setLblName(JLabel lblName) {
+        this.lblName = lblName;
+    }
+
+    public JLabel getLblUserPhoto() {
+        return lblUserPhoto;
+    }
+
+    public void setLblUserPhoto(JLabel lblUserPhoto) {
+        this.lblUserPhoto = lblUserPhoto;
     }
 
     /**
